@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/My-Music-App/static/css/main.fc8f3473.chunk.css",
+    "main.js": "/My-Music-App/static/js/main.29049be7.chunk.js",
+    "main.js.map": "/My-Music-App/static/js/main.29049be7.chunk.js.map",
+    "runtime-main.js": "/My-Music-App/static/js/runtime-main.02da131c.js",
+    "runtime-main.js.map": "/My-Music-App/static/js/runtime-main.02da131c.js.map",
+    "static/js/2.84a8f2df.chunk.js": "/My-Music-App/static/js/2.84a8f2df.chunk.js",
+    "static/js/2.84a8f2df.chunk.js.map": "/My-Music-App/static/js/2.84a8f2df.chunk.js.map",
+    "static/js/3.a54d1174.chunk.js": "/My-Music-App/static/js/3.a54d1174.chunk.js",
+    "static/js/3.a54d1174.chunk.js.map": "/My-Music-App/static/js/3.a54d1174.chunk.js.map",
+    "index.html": "/My-Music-App/index.html",
+    "static/css/main.fc8f3473.chunk.css.map": "/My-Music-App/static/css/main.fc8f3473.chunk.css.map",
+    "static/js/2.84a8f2df.chunk.js.LICENSE.txt": "/My-Music-App/static/js/2.84a8f2df.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02da131c.js",
+    "static/js/2.84a8f2df.chunk.js",
+    "static/css/main.fc8f3473.chunk.css",
+    "static/js/main.29049be7.chunk.js"
+  ]
+}
