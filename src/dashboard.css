@@ -1,0 +1,20 @@
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.notification-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+}

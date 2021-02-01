@@ -1,0 +1,14 @@
+.login{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* form * {margin: 10px 0} */

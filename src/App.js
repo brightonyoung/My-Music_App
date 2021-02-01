@@ -1,56 +1,39 @@
-import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Form from './Form';
-import Dashboard from './Dashboard';
+import React, {Component} from 'react';
 import './App.css';
+import MusicDashboard from './MusicDashboard';
+import {AppBar, Typography, Toolbar} from '@material-ui/core';
+import LogIn from './LogIn';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state={
-      online: false,
-      volume: 20,
-      quality: 'Normal',
-      loggedIn: false,
-
-    }
+class App extends Component {
+  state = { 
+    loggedIn: false
   }
 
-  onlineChange = () => {
-    this.setState({
-      online: !this.state.online
-    })
+  logIn = () => {
+    this.setState({ loggedIn: true });
   }
 
-  volumeChange = (event, value) => this.setState({ volume: value });
+  render() { 
+    return ( 
+      <div>
+      <AppBar position='static' className='navbar'>
+        <Toolbar>
+          <Typography variant={'h3'}>
+            Music Dashboard
+          </Typography>
+        </Toolbar>
+      </AppBar>
 
-  qualityChange = (event) => this.setState({ quality: event.target.value });
-
-  handleLogin = (e) => {
-    e.preventDefault();
-    this.setState({
-      loggedIn: !this.state.loggedIn
-    })
-  }
-  
-  render() {
-    return (
-      !this.state.loggedIn ? (
-      <div className="App">
-        <AppBar position="static" color="primary">
-          <Toolbar>
-            <Typography variant="h6" color="white">
-              My Music App
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <Form onClick={this.handleLogin}/>
+      {!this.state.loggedIn ? 
+        <LogIn 
+          logIn = {this.logIn}
+        />
+        :
+        <div>
+          <MusicDashboard />
+        </div>
+      }
       </div>
-      ) : (
-        <Dashboard onlineChange={this.onlineChange} volumeChange={this.volumeChange} qualityChange={this.qualityChange} online={this.state.online} volume={this.state.volume} quality={this.state.quality}/>
-      )
     );
   }
 }
